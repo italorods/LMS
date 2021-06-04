@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <script src="js/main.js" type="text/javascript"></script>
     <script src="https://kit.fontawesome.com/5d142f9022.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -23,10 +22,10 @@
         </div>
         <div class="input-container">
             <label for="password"><i class="fas fa-lock"></i></label>
-            <input id="password" type="password" name="senha" placeholder="Digite sua senha" />
+            <input id="password" type="password" name="password" placeholder="Digite sua senha" />
         </div>
 
-        <input type="submit" name="acao" value="Entrar" />
+        <input onclick="logar();return false" type="submit" name="acao" value="Entrar" />
 
         
 
@@ -43,22 +42,25 @@
             </li>
         </div>
     </form>
-<script>
-    var email = document.getElementById('email');
-email.addEventListener('focus',()=>{
-    email.style.borderColor = "#000000";
-});
-email.addEventListener('blur',()=>{
-    email.style.borderColor = "#cecece";
-});
 
-var password = document.getElementById('password');
-password.addEventListener('focus',()=>{
-    password.style.borderColor = "#000000";
-});
-password.addEventListener('blur',()=>{
-    password.style.borderColor = "#cecece";
-});
-</script>
+    
+    <script>
+        var email = document.getElementById('email');
+    email.addEventListener('focus',()=>{
+        email.style.borderColor = "#000000";
+    });
+    email.addEventListener('blur',()=>{
+        email.style.borderColor = "#cecece";
+    });
+    
+    var password = document.getElementById('password');
+    password.addEventListener('focus',()=>{
+        password.style.borderColor = "#000000";
+    });
+    password.addEventListener('blur',()=>{
+        password.style.borderColor = "#cecece";
+    });
+    </script>
+
 </body>
 </html>
