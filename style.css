@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(228, 201, 213);
+}
+
+.input-container{
+    position: relative;
+}
+
+label{
+    position: absolute;
+    top: 32px;
+    left: 10px;
+    color: #cecece;
+}
+
+form{
+    background-color: #fff;
+    max-width: 100%;
+    padding: 20px;
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px 20px 20px 20px;
+}
+
+form h3{
+    text-align: center; 
+    color:brown;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form input[type=text], form input[type=password]{
+    width: 100%;
+    height: 40px;
+    border: 2px solid #cecece;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 0px 30px;
+}
+
+form input[type=submit]{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgb(245, 150, 116);
+    color: #fff;
+    border: 2px solid #f5efef;
+    border-radius: 20px;
+    transition: 1s;
+    margin-top: 20px;
+}
+
+form input[type=submit]:hover{
+    background-color: rgb(190, 79, 39);
+}
+
+form input[type=text]:focus{
+    outline: 0;
+}
+
+form input[type=password]{
+    outline: 0;
+}
+
+#recuperar{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    font-size: 12px;
+    list-style-type: none;
+}
+
+#sociais{
+    list-style-type: none;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: rgb(245, 150, 116);
+}
+
+#redes-sociais{
+    list-style-type: none;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.fab fa-twitter{
+    padding-right: 40px;
+}
+
+#recuperar a{
+    text-decoration: none;
+    color: rgb(245, 150, 116);
+    transition: 1s;
+}
+
+#recuperar a:hover{
+    color: rgb(190, 79, 39);
+}
+
+#redes-sociais i{
+    padding-right: 10px;
+    padding-left: 10px;
+    color:rgb(245, 150, 116);
+    cursor: pointer;
+    transition: 1s;
+}
+
+#redes-sociais i:hover{
+    color: rgb(190, 79, 39);
+}
+
+.hr5 {
+    margin-top: 30px;
+    border: 0;
+    border-top: 2px solid #CCC;
+    height: 1px;
+    overflow: visible;
+    padding: 0;
+    color: #CCC;
+    text-align: center;
+  }
+
+.hr5::after {
+    content: "ou";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.0em;
+    padding: 0 0.3em;
+    background: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
