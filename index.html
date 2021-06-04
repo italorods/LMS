@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5d142f9022.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form>
+        <h3>Login</h3>
+        <div class="input-container">
+            <label for='email'><i class="fas fa-at"></i></label>
+            <input id="email" type="text" name="email" placeholder="Seu e-mail" 
+        />
+        </div>
+        <div class="input-container">
+            <label for="password"><i class="fas fa-lock"></i></label>
+            <input id="password" type="password" name="senha" placeholder="Digite sua senha" />
+        </div>
+        <input type="submit" name="acao" value="Entrar" />
+
+        <li id="recuperar"><a href="#">esqueci minha senha</a></li>
+
+        <hr class="hr5">
+
+        <li id="sociais">Siga nossas redes sociais</li>
+
+        <div>
+            <li id="redes-sociais">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </li>
+        </div>
+    </form>
+<script>
+    var email = document.getElementById('email');
+email.addEventListener('focus',()=>{
+    email.style.borderColor = "#000000";
+});
+email.addEventListener('blur',()=>{
+    email.style.borderColor = "#cecece";
+});
+
+var password = document.getElementById('password');
+password.addEventListener('focus',()=>{
+    password.style.borderColor = "#000000";
+});
+password.addEventListener('blur',()=>{
+    password.style.borderColor = "#cecece";
+});
+</script>
+</body>
+</html>
