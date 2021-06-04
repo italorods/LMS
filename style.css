@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: rgb(228, 201, 213);
+    background-color: rgba(245, 150, 116, 0.521);
 }
 
 .input-container{
@@ -22,7 +22,7 @@ label{
 form{
     background-color: #fff;
     max-width: 100%;
-    padding: 20px;
+    padding: 40px;
     position: absolute;
     left: 50%; 
     top: 50%;
@@ -42,7 +42,7 @@ form input[type=text], form input[type=password]{
     border: 2px solid #cecece;
     border-radius: 20px;
     margin-top: 20px;
-    padding: 0px 30px;
+    padding: 0px 40px;
 }
 
 form input[type=submit]{
@@ -139,4 +139,11 @@ form input[type=password]{
     padding: 0 0.3em;
     background: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#logo {
+    text-align: center;
+    list-style-type: none;
+    font-size: 100px;
+    color:rgb(245, 150, 116);
 }
